@@ -2,11 +2,7 @@ from flask import Blueprint, request, jsonify
 import joblib
 import os
 
-# Load trained model
-try:
-    model = joblib.load(open(os.path.join(os.path.dirname(__file__), '../../models/gradient_boosting.joblib'), 'rb'))
-except FileNotFoundError as err:
-    print(f'Ann error occoured: {err}')
+from app.load_model import model
 
 blueprint = Blueprint('blue_print', __name__)
 

@@ -1,4 +1,4 @@
-# Lung Cancer Detection - v1.0
+# Lung Cancer Detection - v1.1
 
 The machine learning project pipeline for lung cancer analysis and prediction at a low cost, to assist individuals in understanding their risk of lung cancer. It also supports decision making, health awareness, based on their lifestyle habits.
 
@@ -27,6 +27,7 @@ lung-cancer-detection/               # Root folder.
 |   ├── data/                            # Scripts for processing and preparations set.
 |   ├── model/                           # Scripts for model training, testing & inference.
 ├── tests/                             # Unit testing scripts (integration, functional).
+├── .gitignore                         # Tells Git which files to ignore when committing your project.
 ├── LICENSE                            # Author license.
 ├── README.md                          # Project documentations for developers.
 ├── requirements.txt                   # Project installation dependencies.
@@ -41,6 +42,38 @@ lung-cancer-detection/               # Root folder.
 4. **Testing** - model testing (test set).
 5. **Inference** - make prediction for new data.
 ```
+
+## Model Performance
+  
+  **Metrics**
+
+  ```
+  1. **Accuracy** - 93%
+  2. **Precision** - 95%
+  3. **Recall** - 91%
+  4. **F1** - 93%
+  ```
+
+  **Matrix**
+
+  ```
+  TP: 43 - TN: 40 - FP: 2 - FN: 4
+  ```
+
+  **AUC**
+
+  ```
+  AUC - 0.97
+  ```
+
+  **Class Report**
+
+  ```
+  Class 0: Precision - 91%, Recall - 95%, F1 - 93% | Total - 42
+  Class 1: Precision - 96%, Recall - 91%, F1 - 93% | Total - 47
+  ```
+
+The model used was gradient boosting (GB).
 
 ## Getting Started
 Install this project on your local machine and here are following steps.
