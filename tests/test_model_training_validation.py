@@ -18,7 +18,7 @@ except FileNotFoundError as err:
 
 # Test the classifier collections
 def test_classifier_selection():
-    return classifiers()
+    assert classifiers()
 
 # Test the training + validation function
 def test_train_validate():
